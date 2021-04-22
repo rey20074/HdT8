@@ -57,7 +57,7 @@ public class MainHosp {
                         System.out.println(p);
                     }
 
-                    System.out.println("\nDebido a la prioridad de las enfermedades los pacientes deben ser atendidos de la siguiente forma: \n");
+                    System.out.println("\nDebido a la prioridad del Vector Heap, las enfermedades los pacientes deben ser atendidos de la siguiente forma: \n");
                     while(!VH.isEmpty()){
                         System.out.println(VH.remove().toString());
                     }
@@ -65,6 +65,11 @@ public class MainHosp {
 
                 //implementacion del JCF
                 else if(op==2){
+                    System.out.println("\nLos pacientes ingresaron de la siguiente manera:\n");
+                    for(Paciente p:datos){
+                        System.out.println(p);
+                    }
+                    System.out.println("\nDebido a la prioridad del Priority Queue, las enfermedades los pacientes deben ser atendidos de la siguiente forma: \n");
                     PriorityQueue<Paciente> pq = new PriorityQueue<Paciente>();
                     for(Paciente p:datos){
                         pq.offer(p);
